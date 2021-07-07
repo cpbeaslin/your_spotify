@@ -10,15 +10,15 @@ import SettingField from './SettingField';
 import Divider from '../../components/Divider';
 
 const AccountFields = [
-  { label: 'Account name', value: user => user.username },
+  { label: 'Account Username', value: user => user.username },
   { label: 'Linked', value: user => user.activated },
   { label: 'Allow new registrations', value: (user, gconfig) => `${gconfig.allowRegistrations}` },
 ];
 
 const SpotifyFields = [
-  { label: 'Account mail', value: 'email' },
-  { label: 'Account name', value: 'display_name' },
-  { label: 'Location', value: 'country' },
+  { label: 'Account Email', value: 'email' },
+  { label: 'Account Username', value: 'display_name' },
+  { label: 'Region', value: 'country' },
   { label: 'Product type', value: 'product' },
 ];
 
@@ -71,7 +71,7 @@ export function Settings({
         <Grid item xs={12} lg={6}>
           <Paper className={s.paper}>
             <div>
-              <Typography variant="h5" align="left">Account infos</Typography>
+              <Typography variant="h5" align="left">Account Information</Typography>
               {
                 AccountFields.map(field => (
                   <div className={s.entry} key={field.value}>
@@ -91,7 +91,7 @@ export function Settings({
         <Grid item xs={12} lg={6}>
           <Paper className={s.paper}>
             <div>
-              <Typography variant="h5" align="left">Spotify infos</Typography>
+              <Typography variant="h5" align="left">Spotify Account Details</Typography>
               {
                 user.activated ? (
                   SpotifyFields.map(field => (
@@ -155,7 +155,7 @@ export function Settings({
               <Grid item xs={6} lg={4}>
                 <a style={{ textDecoration: 'none' }} href={`${window.API_ENDPOINT}/oauth/spotify`}>
                   <Button fullWidth variant="contained" color="primary">
-                    Relog to Spotify
+                    Reconnect to Spotify
                   </Button>
                 </a>
               </Grid>

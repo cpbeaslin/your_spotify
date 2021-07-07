@@ -6,7 +6,7 @@ import BasicChart from '../../BasicChart';
 
 class BestArtists extends BasicChart {
   constructor(props) {
-    super(props, 'Best artists');
+    super(props, 'Most Played Artists');
 
     this.state.elementsShown = 7;
   }
@@ -86,7 +86,7 @@ class BestArtists extends BasicChart {
         xDomain={[0, data.length - 1]}
         type="bar"
         xName="Date"
-        yName="Best artists"
+        yName="Most played Artists"
         forceXToDisplay
         xIsImage
         start={start}

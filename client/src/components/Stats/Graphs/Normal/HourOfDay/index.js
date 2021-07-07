@@ -6,7 +6,7 @@ import BasicChart from '../../BasicChart';
 
 class HourOfDay extends BasicChart {
   constructor(props) {
-    super(props, 'Listening repartition over day');
+    super(props, 'Listening repetition per day');
   }
 
   fetchStats = async () => {

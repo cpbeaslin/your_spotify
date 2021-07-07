@@ -7,7 +7,7 @@ const toPercent = (decimal, fixed = 0) => `${(decimal * 100).toFixed(fixed)}%`;
 
 class BestArtistsPer extends IntervalChart {
   constructor(props) {
-    super(props, '10 best artists repartition over time', FillModes.ASK);
+    super(props, 'Top 10 artists repetition over time', FillModes.ASK);
     this.state.allArtists = [];
     this.state.artists = {};
   }

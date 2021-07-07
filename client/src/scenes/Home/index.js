@@ -60,7 +60,7 @@ function Home({ user }) {
         <Typography align="left" variant="h4">
           Welcome&nbsp;
           <span className={s.username}>{user.username}</span>
-          {!mobile && ' here is your summary'}
+          {!mobile && ', here is your summary'}
         </Typography>
         <div>
           <QuickInterval
@@ -154,7 +154,7 @@ function Home({ user }) {
       <ShowIfInScreen>
         <hr className={s.divider} />
         <div className={s.listened}>
-          <History maxOld={start} title="What you listened to today" xs={2} lg={4} />
+          <History maxOld={start} title="Here's what you listened to today" xs={2} lg={4} />
         </div>
       </ShowIfInScreen>
       {/* <SongsPer />

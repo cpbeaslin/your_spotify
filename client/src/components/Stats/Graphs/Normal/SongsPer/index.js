@@ -6,7 +6,7 @@ import SimpleLineChart from '../../../../Chart/SimpleLineChart';
 
 class SongsPer extends IntervalChart {
   constructor(props) {
-    super(props, 'Songs listened', FillModes.ASK);
+    super(props, 'Number of songs listened to', FillModes.ASK);
   }
 
   dataGetter = stats => {
@@ -34,7 +34,7 @@ class SongsPer extends IntervalChart {
     return (
       <SimpleLineChart
         xName="Date"
-        yName="Songs listened"
+        yName="Number of songs listened to"
         start={start}
         end={end}
         timeSplit={timeSplit}

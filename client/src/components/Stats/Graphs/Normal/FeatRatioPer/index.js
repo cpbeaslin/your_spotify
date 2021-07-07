@@ -6,7 +6,7 @@ import SimpleLineChart from '../../../../Chart/SimpleLineChart';
 
 class FeatRatioPer extends IntervalChart {
   constructor(props) {
-    super(props, 'Average person number per song', FillModes.VOID);
+    super(props, 'Average number of artists per song', FillModes.VOID);
   }
 
   dataGetter = stats => {
@@ -34,7 +34,7 @@ class FeatRatioPer extends IntervalChart {
     return (
       <SimpleLineChart
         xName="Date"
-        yName="Average person number per song"
+        yName="Average number of artists per song"
         start={start}
         end={end}
         tValueFormat={value => `${Math.round(value * 10) / 10} people`}
