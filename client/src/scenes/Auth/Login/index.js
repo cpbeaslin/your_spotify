@@ -44,7 +44,7 @@ function Login({ history, updateUser, updateReady }) {
       <Paper className={s.root}>
         <form onSubmit={login}>
           <Typography variant="h5" className={s.title}>
-            Login to
+            Login to 
             <strong className={s.ys}>YourSpotify</strong>
           </Typography>
           <div className={s.fields}>
