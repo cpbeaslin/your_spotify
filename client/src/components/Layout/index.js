@@ -20,7 +20,7 @@ function Layout({ children }) {
         <AppBar>
           <Toolbar className={s.toolbar}>
             {mobile && <IconButton onClick={onDrawer} edge="start"><Menu /></IconButton>}
-            <Typography align="center" variant="h6">Your spotify</Typography>
+            <Typography align="center" variant="h6">Your Spotify</Typography>
           </Toolbar>
         </AppBar>
       </div>
